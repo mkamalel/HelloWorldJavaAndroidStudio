@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloWorldJava</string>
+    <string name="title">Coolest Font App 😎</string>
+    <string name="max_text_size">You have reached the maximum text size</string>
+    <string name="min_text_size">You have reached the minimum text size</string>
+    <string name="animation_text">Animation Complete!</string>
+
+</resources>

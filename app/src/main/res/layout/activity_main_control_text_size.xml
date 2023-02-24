@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainCoordinatorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivityBlank">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_gradient">
+
+        <ImageView
+            android:id="@+id/wise_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/titleText"
+            android:src="@drawable/logo_wise" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/controls"
+            android:paddingTop="5.0dip"
+            android:paddingBottom="1.0dip"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_below="@+id/titleText">
+
+            <Button
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="- Font"
+                android:id="@+id/decreaseTextSizeButton"
+                android:layout_weight="1.0"/>
+
+            <Button
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="+ Font"
+                android:id="@+id/increaseTextSizeButton"
+                android:layout_weight="1.0"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WISE Rocks!"
+            android:padding="5dip"
+            android:id="@+id/displayText"
+            android:layout_below="@+id/controls"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_box"
+            android:textSize="64px"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
